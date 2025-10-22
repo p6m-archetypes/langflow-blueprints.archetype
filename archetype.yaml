@@ -1,0 +1,9 @@
+---
+description: "Langflow Blueprints"
+authors: ["Jimmie Fulton <jimmie.fulton@gmail.com>"]
+languages: []
+frameworks: []
+tags: []
+
+requires:
+  archetect: "2.0.7"

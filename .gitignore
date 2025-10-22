@@ -1,0 +1,11 @@
+### IntelliJ IDEA project files ###
+.idea/
+*.iws
+*.ipr
+*.iml
+
+### Eclipse project files ###
+.project
+.classpath
+.settings/
+
