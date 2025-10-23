@@ -23,13 +23,13 @@ jobs:
         with:
           source: "."
           args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
-          destination: "./.contents"
+          destination: /tmp/contents
 
       - name: Upload rendered archetype
         uses: actions/upload-artifact@v4
         with:
-          name: rendered-archetype
-          path: ./.contents
+          name: contents
+          path: /tmp/contents
 
   verify:
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
       - name: Download rendered archetype
         uses: actions/download-artifact@v4
         with:
-          name: rendered-archetype
+          name: contents
           path: .
 
       - name: List downloaded files
