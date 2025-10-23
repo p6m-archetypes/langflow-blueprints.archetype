@@ -45,8 +45,7 @@ jobs:
           name: contents
           path: .
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: p6m-actions/python-uv-setup@v1
         with:
           python-version: ${{ matrix.python-version }}
 
