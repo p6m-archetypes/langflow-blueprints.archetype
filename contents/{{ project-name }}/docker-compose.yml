@@ -1,0 +1,9 @@
+services:
+  ai-studio:
+    image: ghcr.io/ybor-studio/ai-studio:latest
+    env_file:
+      - .env
+    ports:
+      - 7860:7860
+    volumes:
+      - ${PWD}:${PWD}

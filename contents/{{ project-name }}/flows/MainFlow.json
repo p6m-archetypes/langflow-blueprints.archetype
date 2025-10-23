@@ -1,0 +1,1828 @@
+{
+  "access_type": "PRIVATE",
+  "action_description": null,
+  "action_name": null,
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ConditionalRouter",
+            "id": "ConditionalRouter-YCuvq",
+            "name": "false_result",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "message",
+            "id": "ConditionalRouter-HqvLT",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ConditionalRouter-YCuvq{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-YCuvqœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}-ConditionalRouter-HqvLT{œfieldNameœ:œmessageœ,œidœ:œConditionalRouter-HqvLTœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ConditionalRouter-YCuvq",
+        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-YCuvqœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ConditionalRouter-HqvLT",
+        "targetHandle": "{œfieldNameœ:œmessageœ,œidœ:œConditionalRouter-HqvLTœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "MultipleTextInputComponent",
+            "id": "TextInput-Pewd7",
+            "name": "text_2_response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_text",
+            "id": "ConditionalRouter-YCuvq",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__TextInput-Pewd7{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_2_responseœ,œoutput_typesœ:[œMessageœ]}-ConditionalRouter-YCuvq{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-YCuvqœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "TextInput-Pewd7",
+        "sourceHandle": "{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_2_responseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ConditionalRouter-YCuvq",
+        "targetHandle": "{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-YCuvqœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "MultipleTextInputComponent",
+            "id": "TextInput-Pewd7",
+            "name": "text_1_response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "message",
+            "id": "ConditionalRouter-YCuvq",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__TextInput-Pewd7{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_1_responseœ,œoutput_typesœ:[œMessageœ]}-ConditionalRouter-YCuvq{œfieldNameœ:œmessageœ,œidœ:œConditionalRouter-YCuvqœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "TextInput-Pewd7",
+        "sourceHandle": "{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_1_responseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ConditionalRouter-YCuvq",
+        "targetHandle": "{œfieldNameœ:œmessageœ,œidœ:œConditionalRouter-YCuvqœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "MultipleTextInputComponent",
+            "id": "TextInput-Pewd7",
+            "name": "text_2_response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_text",
+            "id": "ConditionalRouter-HqvLT",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__TextInput-Pewd7{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_2_responseœ,œoutput_typesœ:[œMessageœ]}-ConditionalRouter-HqvLT{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-HqvLTœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "TextInput-Pewd7",
+        "sourceHandle": "{œdataTypeœ:œMultipleTextInputComponentœ,œidœ:œTextInput-Pewd7œ,œnameœ:œtext_2_responseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ConditionalRouter-HqvLT",
+        "targetHandle": "{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-HqvLTœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ConditionalRouter",
+            "id": "ConditionalRouter-YCuvq",
+            "name": "true_result",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "TextInput-ZeKrO~input_value",
+            "id": "RunFlow-c6ogX",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ConditionalRouter-YCuvq{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-YCuvqœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}-RunFlow-c6ogX{œfieldNameœ:œTextInput-ZeKrO~input_valueœ,œidœ:œRunFlow-c6ogXœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ConditionalRouter-YCuvq",
+        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-YCuvqœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "RunFlow-c6ogX",
+        "targetHandle": "{œfieldNameœ:œTextInput-ZeKrO~input_valueœ,œidœ:œRunFlow-c6ogXœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "RunFlow",
+            "id": "RunFlow-c6ogX",
+            "name": "flow_outputs_message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input1",
+            "id": "TextOutput-mTlAu",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__RunFlow-c6ogX{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-c6ogXœ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}-TextOutput-mTlAu{œfieldNameœ:œinput1œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "RunFlow-c6ogX",
+        "sourceHandle": "{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-c6ogXœ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "TextOutput-mTlAu",
+        "targetHandle": "{œfieldNameœ:œinput1œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ConditionalRouter",
+            "id": "ConditionalRouter-HqvLT",
+            "name": "true_result",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "TextInput-6CHMN~input_value",
+            "id": "RunFlow-ZUWlv",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ConditionalRouter-HqvLT{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-HqvLTœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}-RunFlow-ZUWlv{œfieldNameœ:œTextInput-6CHMN~input_valueœ,œidœ:œRunFlow-ZUWlvœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ConditionalRouter-HqvLT",
+        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-HqvLTœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "RunFlow-ZUWlv",
+        "targetHandle": "{œfieldNameœ:œTextInput-6CHMN~input_valueœ,œidœ:œRunFlow-ZUWlvœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ConditionalRouter",
+            "id": "ConditionalRouter-HqvLT",
+            "name": "false_result",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "TextInput-jdRoK~input_value",
+            "id": "RunFlow-iLbS8",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ConditionalRouter-HqvLT{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-HqvLTœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}-RunFlow-iLbS8{œfieldNameœ:œTextInput-jdRoK~input_valueœ,œidœ:œRunFlow-iLbS8œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ConditionalRouter-HqvLT",
+        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-HqvLTœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "RunFlow-iLbS8",
+        "targetHandle": "{œfieldNameœ:œTextInput-jdRoK~input_valueœ,œidœ:œRunFlow-iLbS8œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "RunFlow",
+            "id": "RunFlow-ZUWlv",
+            "name": "flow_outputs_message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input2",
+            "id": "TextOutput-mTlAu",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__RunFlow-ZUWlv{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-ZUWlvœ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}-TextOutput-mTlAu{œfieldNameœ:œinput2œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "RunFlow-ZUWlv",
+        "sourceHandle": "{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-ZUWlvœ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "TextOutput-mTlAu",
+        "targetHandle": "{œfieldNameœ:œinput2œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "RunFlow",
+            "id": "RunFlow-iLbS8",
+            "name": "flow_outputs_message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input3",
+            "id": "TextOutput-mTlAu",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__RunFlow-iLbS8{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-iLbS8œ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}-TextOutput-mTlAu{œfieldNameœ:œinput3œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "RunFlow-iLbS8",
+        "sourceHandle": "{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-iLbS8œ,œnameœ:œflow_outputs_messageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "TextOutput-mTlAu",
+        "targetHandle": "{œfieldNameœ:œinput3œ,œidœ:œTextOutput-mTlAuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "ConditionalRouter-YCuvq",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "logic",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Routes an input message to a corresponding output based on text comparison.",
+            "display_name": "If-Else",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_text",
+              "match_text",
+              "operator",
+              "case_sensitive",
+              "message",
+              "max_iterations",
+              "default_route"
+            ],
+            "frozen": false,
+            "icon": "split",
+            "key": "ConditionalRouter",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "True",
+                "hidden": false,
+                "method": "true_response",
+                "name": "true_result",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "False",
+                "hidden": false,
+                "method": "false_response",
+                "name": "false_result",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.13583134465871544,
+            "template": {
+              "_type": "Component",
+              "case_sensitive": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Case Sensitive",
+                "dynamic": false,
+                "info": "If true, the comparison will be case sensitive.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "case_sensitive",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import re\n\nfrom langflow.custom import Component\nfrom langflow.io import BoolInput, DropdownInput, IntInput, MessageInput, MessageTextInput, Output\nfrom langflow.schema.message import Message\n\n\nclass ConditionalRouterComponent(Component):\n    display_name = \"If-Else\"\n    description = \"Routes an input message to a corresponding output based on text comparison.\"\n    icon = \"split\"\n    name = \"ConditionalRouter\"\n\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.__iteration_updated = False\n\n    inputs = [\n        MessageTextInput(\n            name=\"input_text\",\n            display_name=\"Text Input\",\n            info=\"The primary text input for the operation.\",\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"match_text\",\n            display_name=\"Match Text\",\n            info=\"The text input to compare against.\",\n            required=True,\n        ),\n        DropdownInput(\n            name=\"operator\",\n            display_name=\"Operator\",\n            options=[\"equals\", \"not equals\", \"contains\", \"starts with\", \"ends with\", \"regex\"],\n            info=\"The operator to apply for comparing the texts.\",\n            value=\"equals\",\n            real_time_refresh=True,\n        ),\n        BoolInput(\n            name=\"case_sensitive\",\n            display_name=\"Case Sensitive\",\n            info=\"If true, the comparison will be case sensitive.\",\n            value=False,\n        ),\n        MessageInput(\n            name=\"message\",\n            display_name=\"Message\",\n            info=\"The message to pass through either route.\",\n        ),\n        IntInput(\n            name=\"max_iterations\",\n            display_name=\"Max Iterations\",\n            info=\"The maximum number of iterations for the conditional router.\",\n            value=10,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"default_route\",\n            display_name=\"Default Route\",\n            options=[\"true_result\", \"false_result\"],\n            info=\"The default route to take when max iterations are reached.\",\n            value=\"false_result\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"True\", name=\"true_result\", method=\"true_response\"),\n        Output(display_name=\"False\", name=\"false_result\", method=\"false_response\"),\n    ]\n\n    def _pre_run_setup(self):\n        self.__iteration_updated = False\n\n    def evaluate_condition(self, input_text: str, match_text: str, operator: str, *, case_sensitive: bool) -> bool:\n        if not case_sensitive and operator != \"regex\":\n            input_text = input_text.lower()\n            match_text = match_text.lower()\n\n        if operator == \"equals\":\n            return input_text == match_text\n        if operator == \"not equals\":\n            return input_text != match_text\n        if operator == \"contains\":\n            return match_text in input_text\n        if operator == \"starts with\":\n            return input_text.startswith(match_text)\n        if operator == \"ends with\":\n            return input_text.endswith(match_text)\n        if operator == \"regex\":\n            try:\n                return bool(re.match(match_text, input_text))\n            except re.error:\n                return False  # Return False if the regex is invalid\n        return False\n\n    def iterate_and_stop_once(self, route_to_stop: str):\n        if not self.__iteration_updated:\n            self.update_ctx({f\"{self._id}_iteration\": self.ctx.get(f\"{self._id}_iteration\", 0) + 1})\n            self.__iteration_updated = True\n            if self.ctx.get(f\"{self._id}_iteration\", 0) >= self.max_iterations and route_to_stop == self.default_route:\n                route_to_stop = \"true_result\" if route_to_stop == \"false_result\" else \"false_result\"\n            self.stop(route_to_stop)\n\n    def true_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n        if result:\n            self.status = self.message\n            self.iterate_and_stop_once(\"false_result\")\n            return self.message\n        self.iterate_and_stop_once(\"true_result\")\n        return Message(content=\"\")\n\n    def false_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n        if not result:\n            self.status = self.message\n            self.iterate_and_stop_once(\"true_result\")\n            return self.message\n        self.iterate_and_stop_once(\"false_result\")\n        return Message(content=\"\")\n\n    def update_build_config(self, build_config: dict, field_value: str, field_name: str | None = None) -> dict:\n        if field_name == \"operator\":\n            if field_value == \"regex\":\n                build_config.pop(\"case_sensitive\", None)\n\n            # Ensure case_sensitive is present for all other operators\n            elif \"case_sensitive\" not in build_config:\n                case_sensitive_input = next(\n                    (input_field for input_field in self.inputs if input_field.name == \"case_sensitive\"), None\n                )\n                if case_sensitive_input:\n                    build_config[\"case_sensitive\"] = case_sensitive_input.to_dict()\n        return build_config\n"
+              },
+              "default_route": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Default Route",
+                "dynamic": false,
+                "info": "The default route to take when max iterations are reached.",
+                "name": "default_route",
+                "options": [
+                  "true_result",
+                  "false_result"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "false_result"
+              },
+              "input_text": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Text Input",
+                "dynamic": false,
+                "info": "The primary text input for the operation.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_text",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "match_text": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Match Text",
+                "dynamic": false,
+                "info": "The text input to compare against.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "match_text",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "semantic"
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of iterations for the conditional router.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 10
+              },
+              "message": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Message",
+                "dynamic": false,
+                "info": "The message to pass through either route.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "operator": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Operator",
+                "dynamic": false,
+                "info": "The operator to apply for comparing the texts.",
+                "name": "operator",
+                "options": [
+                  "equals",
+                  "not equals",
+                  "contains",
+                  "starts with",
+                  "ends with",
+                  "regex"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "equals"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ConditionalRouter"
+        },
+        "dragging": false,
+        "id": "ConditionalRouter-YCuvq",
+        "measured": {
+          "height": 588,
+          "width": 320
+        },
+        "position": {
+          "x": -1102.844656556716,
+          "y": -266.14369708924437
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ConditionalRouter-HqvLT",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Routes an input message to a corresponding output based on text comparison.",
+            "display_name": "If-Else",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_text",
+              "match_text",
+              "operator",
+              "case_sensitive",
+              "message",
+              "max_iterations",
+              "default_route"
+            ],
+            "frozen": false,
+            "icon": "split",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "True",
+                "hidden": false,
+                "method": "true_response",
+                "name": "true_result",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "False",
+                "hidden": false,
+                "method": "false_response",
+                "name": "false_result",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "case_sensitive": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Case Sensitive",
+                "dynamic": false,
+                "info": "If true, the comparison will be case sensitive.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "case_sensitive",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import re\n\nfrom langflow.custom import Component\nfrom langflow.io import BoolInput, DropdownInput, IntInput, MessageInput, MessageTextInput, Output\nfrom langflow.schema.message import Message\n\n\nclass ConditionalRouterComponent(Component):\n    display_name = \"If-Else\"\n    description = \"Routes an input message to a corresponding output based on text comparison.\"\n    icon = \"split\"\n    name = \"ConditionalRouter\"\n\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.__iteration_updated = False\n\n    inputs = [\n        MessageTextInput(\n            name=\"input_text\",\n            display_name=\"Text Input\",\n            info=\"The primary text input for the operation.\",\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"match_text\",\n            display_name=\"Match Text\",\n            info=\"The text input to compare against.\",\n            required=True,\n        ),\n        DropdownInput(\n            name=\"operator\",\n            display_name=\"Operator\",\n            options=[\"equals\", \"not equals\", \"contains\", \"starts with\", \"ends with\", \"regex\"],\n            info=\"The operator to apply for comparing the texts.\",\n            value=\"equals\",\n            real_time_refresh=True,\n        ),\n        BoolInput(\n            name=\"case_sensitive\",\n            display_name=\"Case Sensitive\",\n            info=\"If true, the comparison will be case sensitive.\",\n            value=False,\n        ),\n        MessageInput(\n            name=\"message\",\n            display_name=\"Message\",\n            info=\"The message to pass through either route.\",\n        ),\n        IntInput(\n            name=\"max_iterations\",\n            display_name=\"Max Iterations\",\n            info=\"The maximum number of iterations for the conditional router.\",\n            value=10,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"default_route\",\n            display_name=\"Default Route\",\n            options=[\"true_result\", \"false_result\"],\n            info=\"The default route to take when max iterations are reached.\",\n            value=\"false_result\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"True\", name=\"true_result\", method=\"true_response\"),\n        Output(display_name=\"False\", name=\"false_result\", method=\"false_response\"),\n    ]\n\n    def _pre_run_setup(self):\n        self.__iteration_updated = False\n\n    def evaluate_condition(self, input_text: str, match_text: str, operator: str, *, case_sensitive: bool) -> bool:\n        if not case_sensitive and operator != \"regex\":\n            input_text = input_text.lower()\n            match_text = match_text.lower()\n\n        if operator == \"equals\":\n            return input_text == match_text\n        if operator == \"not equals\":\n            return input_text != match_text\n        if operator == \"contains\":\n            return match_text in input_text\n        if operator == \"starts with\":\n            return input_text.startswith(match_text)\n        if operator == \"ends with\":\n            return input_text.endswith(match_text)\n        if operator == \"regex\":\n            try:\n                return bool(re.match(match_text, input_text))\n            except re.error:\n                return False  # Return False if the regex is invalid\n        return False\n\n    def iterate_and_stop_once(self, route_to_stop: str):\n        if not self.__iteration_updated:\n            self.update_ctx({f\"{self._id}_iteration\": self.ctx.get(f\"{self._id}_iteration\", 0) + 1})\n            self.__iteration_updated = True\n            if self.ctx.get(f\"{self._id}_iteration\", 0) >= self.max_iterations and route_to_stop == self.default_route:\n                route_to_stop = \"true_result\" if route_to_stop == \"false_result\" else \"false_result\"\n            self.stop(route_to_stop)\n\n    def true_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n        if result:\n            self.status = self.message\n            self.iterate_and_stop_once(\"false_result\")\n            return self.message\n        self.iterate_and_stop_once(\"true_result\")\n        return Message(content=\"\")\n\n    def false_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n        if not result:\n            self.status = self.message\n            self.iterate_and_stop_once(\"true_result\")\n            return self.message\n        self.iterate_and_stop_once(\"false_result\")\n        return Message(content=\"\")\n\n    def update_build_config(self, build_config: dict, field_value: str, field_name: str | None = None) -> dict:\n        if field_name == \"operator\":\n            if field_value == \"regex\":\n                build_config.pop(\"case_sensitive\", None)\n\n            # Ensure case_sensitive is present for all other operators\n            elif \"case_sensitive\" not in build_config:\n                case_sensitive_input = next(\n                    (input_field for input_field in self.inputs if input_field.name == \"case_sensitive\"), None\n                )\n                if case_sensitive_input:\n                    build_config[\"case_sensitive\"] = case_sensitive_input.to_dict()\n        return build_config\n"
+              },
+              "default_route": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Default Route",
+                "dynamic": false,
+                "info": "The default route to take when max iterations are reached.",
+                "name": "default_route",
+                "options": [
+                  "true_result",
+                  "false_result"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "false_result"
+              },
+              "input_text": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Text Input",
+                "dynamic": false,
+                "info": "The primary text input for the operation.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_text",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "match_text": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Match Text",
+                "dynamic": false,
+                "info": "The text input to compare against.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "match_text",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "keyword"
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of iterations for the conditional router.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 10
+              },
+              "message": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Message",
+                "dynamic": false,
+                "info": "The message to pass through either route.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "operator": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Operator",
+                "dynamic": false,
+                "info": "The operator to apply for comparing the texts.",
+                "name": "operator",
+                "options": [
+                  "equals",
+                  "not equals",
+                  "contains",
+                  "starts with",
+                  "ends with",
+                  "regex"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "equals"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ConditionalRouter"
+        },
+        "dragging": false,
+        "id": "ConditionalRouter-HqvLT",
+        "measured": {
+          "height": 588,
+          "width": 320
+        },
+        "position": {
+          "x": -610.4280571197112,
+          "y": 290.8292816351067
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "TextOutput-mTlAu",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a text output in the Playground.",
+            "display_name": "Text Output",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input1",
+              "input2",
+              "input3"
+            ],
+            "frozen": false,
+            "icon": "type",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "hidden": null,
+                "method": "text_response",
+                "name": "text",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.io.text import TextComponent\nfrom langflow.io import MultilineInput, Output\nfrom langflow.schema.message import Message\n\n\nclass TextOutputComponent(TextComponent):\n    display_name = \"Text Output\"\n    description = \"Display a text output in the Playground.\"\n    icon = \"type\"\n    name = \"TextOutput\"\n\n    inputs = [\n        MultilineInput(\n            name=\"input1\",\n            display_name=\"Text from flow 1\",\n            info=\"Text to be passed as output.\",\n        ),\n        MultilineInput(\n            name=\"input2\",\n            display_name=\"Text from flow 2\",\n            info=\"Text to be passed as output.\",\n        ),\n        MultilineInput(\n            name=\"input3\",\n            display_name=\"Text from flow 3\",\n            info=\"Text to be passed as output.\",\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Message\", name=\"text\", method=\"text_response\"),\n    ]\n\n    def text_response(self) -> Message:\n        message = Message(\n            text=self.input1 if self.input1 else self.input2 if self.input2 else self.input3\n        )\n        self.status = self.input_value\n        return message\n"
+              },
+              "input1": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text from flow 1",
+                "dynamic": false,
+                "info": "Text to be passed as output.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input1",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "input2": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text from flow 2",
+                "dynamic": false,
+                "info": "Text to be passed as output.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input2",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "input3": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text from flow 3",
+                "dynamic": false,
+                "info": "Text to be passed as output.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input3",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "TextOutput"
+        },
+        "dragging": false,
+        "id": "TextOutput-mTlAu",
+        "measured": {
+          "height": 394,
+          "width": 320
+        },
+        "position": {
+          "x": 449.8696339849571,
+          "y": 135.1927318292067
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "TextInput-Pewd7",
+          "node": {
+            "base_classes": [
+              "Message",
+              "Text"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get multiple text inputs from the Playground.",
+            "display_name": "Multiple Text Input",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input_value_1",
+              "input_value_2",
+              "number"
+            ],
+            "frozen": false,
+            "icon": "type",
+            "legacy": false,
+            "lf_version": "1.4.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "hidden": false,
+                "method": "text_1_response",
+                "name": "text_1_response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Type",
+                "hidden": false,
+                "method": "text_2_response",
+                "name": "text_2_response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Number Response",
+                "hidden": null,
+                "method": "number_response",
+                "name": "number_response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Text",
+                "tool_mode": true,
+                "types": [
+                  "Text"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.io.text import TextComponent\nfrom langflow.io import MessageTextInput, IntInput, Output\nfrom langflow.schema.message import Message\n\nclass MultipleTextInputComponent(TextComponent):\n    display_name = \"Multiple Text Input\"\n    description = \"Get multiple text inputs from the Playground.\"\n    icon = \"type\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"input_value_1\",\n            display_name=\"Text Input\",\n            info=\"First text input.\",\n        ),\n        MessageTextInput(\n            name=\"input_value_2\",\n            display_name=\"Flow Type\",\n            info=\"Second text input.\",\n        ),\n        IntInput(\n            name=\"number\",\n            display_name=\"Number\",\n            info=\"An integer input.\",\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Message\", name=\"text_1_response\", method=\"text_1_response\"),\n        Output(display_name=\"Flow Type\", name=\"text_2_response\", method=\"text_2_response\"),\n        Output(display_name=\"Number Response\", name=\"number_response\", method=\"number_response\"),\n    ]\n\n    def text_1_response(self) -> Message:\n        return Message(text=self.input_value_1)\n\n    def text_2_response(self) -> Message:\n        return Message(text=self.input_value_2)\n\n    def number_response(self) -> str:\n        return f\"This is my int input multiplied by 2: {self.number * 2}\""
+              },
+              "input_value_1": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Text Input",
+                "dynamic": false,
+                "info": "First text input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value_1",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "input_value_2": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Flow Type",
+                "dynamic": false,
+                "info": "Second text input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value_2",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "number": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Number",
+                "dynamic": false,
+                "info": "An integer input.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "number",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "MultipleTextInputComponent"
+        },
+        "dragging": false,
+        "id": "TextInput-Pewd7",
+        "measured": {
+          "height": 490,
+          "width": 320
+        },
+        "position": {
+          "x": -1679.2184932687337,
+          "y": -13.110762418403677
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "RunFlow-iLbS8",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "beta": true,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Creates a tool component from a Flow that takes all its inputs and runs it.  \n **Select a Flow to use the tool mode**",
+            "display_name": "Run Flow",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "flow_name_selected",
+              "session_id"
+            ],
+            "frozen": false,
+            "icon": "Workflow",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Data Output",
+                "hidden": true,
+                "method": "data_output",
+                "name": "flow_outputs_data",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Data",
+                "tool_mode": false,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Dataframe Output",
+                "hidden": true,
+                "method": "dataframe_output",
+                "name": "flow_outputs_dataframe",
+                "options": null,
+                "required_inputs": [],
+                "selected": "DataFrame",
+                "tool_mode": false,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Message Output",
+                "hidden": false,
+                "method": "message_output",
+                "name": "flow_outputs_message",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "TextInput-jdRoK~input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text Input - Text",
+                "dynamic": false,
+                "info": "Text to be passed as input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "TextInput-jdRoK~input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\n\nfrom loguru import logger\n\nfrom langflow.base.tools.run_flow import RunFlowBaseComponent\nfrom langflow.helpers.flow import run_flow\nfrom langflow.schema import dotdict\n\n\nclass RunFlowComponent(RunFlowBaseComponent):\n    display_name = \"Run Flow\"\n    description = (\n        \"Creates a tool component from a Flow that takes all its inputs and runs it. \"\n        \" \\n **Select a Flow to use the tool mode**\"\n    )\n    beta = True\n    name = \"RunFlow\"\n    icon = \"Workflow\"\n\n    inputs = RunFlowBaseComponent._base_inputs\n    outputs = RunFlowBaseComponent._base_outputs\n\n    async def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None):\n        if field_name == \"flow_name_selected\":\n            build_config[\"flow_name_selected\"][\"options\"] = await self.get_flow_names()\n            missing_keys = [key for key in self.default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n            if field_value is not None:\n                try:\n                    graph = await self.get_graph(field_value)\n                    build_config = self.update_build_config_from_graph(build_config, graph)\n                except Exception as e:\n                    msg = f\"Error building graph for flow {field_value}\"\n                    logger.exception(msg)\n                    raise RuntimeError(msg) from e\n        return build_config\n\n    async def run_flow_with_tweaks(self):\n        tweaks: dict = {}\n\n        flow_name_selected = self._attributes.get(\"flow_name_selected\")\n        parsed_flow_tweak_data = self._attributes.get(\"flow_tweak_data\", {})\n        if not isinstance(parsed_flow_tweak_data, dict):\n            parsed_flow_tweak_data = parsed_flow_tweak_data.dict()\n\n        if parsed_flow_tweak_data != {}:\n            for field in parsed_flow_tweak_data:\n                if \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = parsed_flow_tweak_data[field]\n        else:\n            for field in self._attributes:\n                if field not in self.default_keys and \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = self._attributes[field]\n\n        return await run_flow(\n            inputs=None,\n            output_type=\"all\",\n            flow_id=None,\n            flow_name=flow_name_selected,\n            tweaks=tweaks,\n            user_id=str(self.user_id),\n            session_id=self.graph.session_id or self.session_id,\n        )\n"
+              },
+              "flow_name_selected": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Flow Name",
+                "dynamic": false,
+                "info": "The name of the flow to run.",
+                "name": "flow_name_selected",
+                "options": [
+                  "Main flow",
+                  "Simple Agent",
+                  "Semantic Search Flow",
+                  "Keyword search flow",
+                  "Graph Query Flow"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Graph Query Flow"
+              },
+              "session_id": {
+                "_input_type": "MessageInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID to run the flow in.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": {
+                  "data": {
+                    "category": "message",
+                    "content_blocks": [],
+                    "duration": null,
+                    "edit": false,
+                    "error": false,
+                    "files": [],
+                    "flow_id": null,
+                    "properties": {
+                      "allow_markdown": false,
+                      "edited": false,
+                      "source": {
+                        "display_name": null,
+                        "id": null,
+                        "source": null
+                      },
+                      "state": "complete",
+                      "targets": []
+                    },
+                    "sender": null,
+                    "sender_name": null,
+                    "session_id": "",
+                    "text": "",
+                    "timestamp": "2025-07-31 11:03:27 UTC"
+                  },
+                  "default_value": "",
+                  "text_key": "text"
+                }
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "RunFlow"
+        },
+        "dragging": false,
+        "id": "RunFlow-iLbS8",
+        "measured": {
+          "height": 351,
+          "width": 320
+        },
+        "position": {
+          "x": -110.2684948708336,
+          "y": 681.3961034190704
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "RunFlow-c6ogX",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "beta": true,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Creates a tool component from a Flow that takes all its inputs and runs it.  \n **Select a Flow to use the tool mode**",
+            "display_name": "Run Flow",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "flow_name_selected",
+              "session_id"
+            ],
+            "frozen": false,
+            "icon": "Workflow",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Data Output",
+                "hidden": true,
+                "method": "data_output",
+                "name": "flow_outputs_data",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Data",
+                "tool_mode": false,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Dataframe Output",
+                "hidden": true,
+                "method": "dataframe_output",
+                "name": "flow_outputs_dataframe",
+                "options": null,
+                "required_inputs": [],
+                "selected": "DataFrame",
+                "tool_mode": false,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Message Output",
+                "hidden": false,
+                "method": "message_output",
+                "name": "flow_outputs_message",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "TextInput-ZeKrO~input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text Input - Text",
+                "dynamic": false,
+                "info": "Text to be passed as input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "TextInput-ZeKrO~input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\n\nfrom loguru import logger\n\nfrom langflow.base.tools.run_flow import RunFlowBaseComponent\nfrom langflow.helpers.flow import run_flow\nfrom langflow.schema import dotdict\n\n\nclass RunFlowComponent(RunFlowBaseComponent):\n    display_name = \"Run Flow\"\n    description = (\n        \"Creates a tool component from a Flow that takes all its inputs and runs it. \"\n        \" \\n **Select a Flow to use the tool mode**\"\n    )\n    beta = True\n    name = \"RunFlow\"\n    icon = \"Workflow\"\n\n    inputs = RunFlowBaseComponent._base_inputs\n    outputs = RunFlowBaseComponent._base_outputs\n\n    async def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None):\n        if field_name == \"flow_name_selected\":\n            build_config[\"flow_name_selected\"][\"options\"] = await self.get_flow_names()\n            missing_keys = [key for key in self.default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n            if field_value is not None:\n                try:\n                    graph = await self.get_graph(field_value)\n                    build_config = self.update_build_config_from_graph(build_config, graph)\n                except Exception as e:\n                    msg = f\"Error building graph for flow {field_value}\"\n                    logger.exception(msg)\n                    raise RuntimeError(msg) from e\n        return build_config\n\n    async def run_flow_with_tweaks(self):\n        tweaks: dict = {}\n\n        flow_name_selected = self._attributes.get(\"flow_name_selected\")\n        parsed_flow_tweak_data = self._attributes.get(\"flow_tweak_data\", {})\n        if not isinstance(parsed_flow_tweak_data, dict):\n            parsed_flow_tweak_data = parsed_flow_tweak_data.dict()\n\n        if parsed_flow_tweak_data != {}:\n            for field in parsed_flow_tweak_data:\n                if \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = parsed_flow_tweak_data[field]\n        else:\n            for field in self._attributes:\n                if field not in self.default_keys and \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = self._attributes[field]\n\n        return await run_flow(\n            inputs=None,\n            output_type=\"all\",\n            flow_id=None,\n            flow_name=flow_name_selected,\n            tweaks=tweaks,\n            user_id=str(self.user_id),\n            session_id=self.graph.session_id or self.session_id,\n        )\n"
+              },
+              "flow_name_selected": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Flow Name",
+                "dynamic": false,
+                "info": "The name of the flow to run.",
+                "name": "flow_name_selected",
+                "options": [
+                  "Main flow",
+                  "Simple Agent",
+                  "Semantic Search Flow",
+                  "Keyword search flow",
+                  "Graph Query Flow"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Semantic Search Flow"
+              },
+              "session_id": {
+                "_input_type": "MessageInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID to run the flow in.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": {
+                  "data": {
+                    "category": "message",
+                    "content_blocks": [],
+                    "duration": null,
+                    "edit": false,
+                    "error": false,
+                    "files": [],
+                    "flow_id": null,
+                    "properties": {
+                      "allow_markdown": false,
+                      "edited": false,
+                      "source": {
+                        "display_name": null,
+                        "id": null,
+                        "source": null
+                      },
+                      "state": "complete",
+                      "targets": []
+                    },
+                    "sender": null,
+                    "sender_name": null,
+                    "session_id": "",
+                    "text": "",
+                    "timestamp": "2025-07-31 11:03:27 UTC"
+                  },
+                  "default_value": "",
+                  "text_key": "text"
+                }
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "RunFlow"
+        },
+        "dragging": false,
+        "id": "RunFlow-c6ogX",
+        "measured": {
+          "height": 351,
+          "width": 320
+        },
+        "position": {
+          "x": -83.72803253924539,
+          "y": -486.38423917080917
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "RunFlow-ZUWlv",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "beta": true,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Creates a tool component from a Flow that takes all its inputs and runs it.  \n **Select a Flow to use the tool mode**",
+            "display_name": "Run Flow",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "flow_name_selected",
+              "session_id"
+            ],
+            "frozen": false,
+            "icon": "Workflow",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Data Output",
+                "hidden": true,
+                "method": "data_output",
+                "name": "flow_outputs_data",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Data",
+                "tool_mode": false,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Dataframe Output",
+                "hidden": true,
+                "method": "dataframe_output",
+                "name": "flow_outputs_dataframe",
+                "options": null,
+                "required_inputs": [],
+                "selected": "DataFrame",
+                "tool_mode": false,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Flow Message Output",
+                "hidden": false,
+                "method": "message_output",
+                "name": "flow_outputs_message",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "TextInput-6CHMN~input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text Input - Text",
+                "dynamic": false,
+                "info": "Text to be passed as input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "TextInput-6CHMN~input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\n\nfrom loguru import logger\n\nfrom langflow.base.tools.run_flow import RunFlowBaseComponent\nfrom langflow.helpers.flow import run_flow\nfrom langflow.schema import dotdict\n\n\nclass RunFlowComponent(RunFlowBaseComponent):\n    display_name = \"Run Flow\"\n    description = (\n        \"Creates a tool component from a Flow that takes all its inputs and runs it. \"\n        \" \\n **Select a Flow to use the tool mode**\"\n    )\n    beta = True\n    name = \"RunFlow\"\n    icon = \"Workflow\"\n\n    inputs = RunFlowBaseComponent._base_inputs\n    outputs = RunFlowBaseComponent._base_outputs\n\n    async def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None):\n        if field_name == \"flow_name_selected\":\n            build_config[\"flow_name_selected\"][\"options\"] = await self.get_flow_names()\n            missing_keys = [key for key in self.default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n            if field_value is not None:\n                try:\n                    graph = await self.get_graph(field_value)\n                    build_config = self.update_build_config_from_graph(build_config, graph)\n                except Exception as e:\n                    msg = f\"Error building graph for flow {field_value}\"\n                    logger.exception(msg)\n                    raise RuntimeError(msg) from e\n        return build_config\n\n    async def run_flow_with_tweaks(self):\n        tweaks: dict = {}\n\n        flow_name_selected = self._attributes.get(\"flow_name_selected\")\n        parsed_flow_tweak_data = self._attributes.get(\"flow_tweak_data\", {})\n        if not isinstance(parsed_flow_tweak_data, dict):\n            parsed_flow_tweak_data = parsed_flow_tweak_data.dict()\n\n        if parsed_flow_tweak_data != {}:\n            for field in parsed_flow_tweak_data:\n                if \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = parsed_flow_tweak_data[field]\n        else:\n            for field in self._attributes:\n                if field not in self.default_keys and \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = self._attributes[field]\n\n        return await run_flow(\n            inputs=None,\n            output_type=\"all\",\n            flow_id=None,\n            flow_name=flow_name_selected,\n            tweaks=tweaks,\n            user_id=str(self.user_id),\n            session_id=self.graph.session_id or self.session_id,\n        )\n"
+              },
+              "flow_name_selected": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Flow Name",
+                "dynamic": false,
+                "info": "The name of the flow to run.",
+                "name": "flow_name_selected",
+                "options": [
+                  "Main flow",
+                  "Simple Agent",
+                  "Semantic Search Flow",
+                  "Keyword search flow",
+                  "Graph Query Flow"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Keyword search flow"
+              },
+              "session_id": {
+                "_input_type": "MessageInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID to run the flow in.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": {
+                  "data": {
+                    "category": "message",
+                    "content_blocks": [],
+                    "duration": null,
+                    "edit": false,
+                    "error": false,
+                    "files": [],
+                    "flow_id": null,
+                    "properties": {
+                      "allow_markdown": false,
+                      "edited": false,
+                      "source": {
+                        "display_name": null,
+                        "id": null,
+                        "source": null
+                      },
+                      "state": "complete",
+                      "targets": []
+                    },
+                    "sender": null,
+                    "sender_name": null,
+                    "session_id": "",
+                    "text": "",
+                    "timestamp": "2025-07-31 11:03:27 UTC"
+                  },
+                  "default_value": "",
+                  "text_key": "text"
+                }
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "RunFlow"
+        },
+        "dragging": false,
+        "id": "RunFlow-ZUWlv",
+        "measured": {
+          "height": 351,
+          "width": 320
+        },
+        "position": {
+          "x": -76.38207877240433,
+          "y": 99.54379342465418
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": 625.3374524691021,
+      "y": 242.76586003315285,
+      "zoom": 0.3139859897397148
+    }
+  },
+  "description": "Building Intelligent Interactions.",
+  "endpoint_name": null,
+  "folder_id": "2dca9be4-5b8a-41a5-8712-ed39572ede2a",
+  "fs_path": null,
+  "gradient": null,
+  "icon": null,
+  "icon_bg_color": null,
+  "id": "44db1b53-9149-4992-a006-30c1a837defe",
+  "is_component": false,
+  "locked": false,
+  "mcp_enabled": true,
+  "name": "Main flow",
+  "tags": [],
+  "updated_at": "2025-08-01T11:25:03+00:00",
+  "user_id": "b8eb9e41-8ff6-4e04-a8a9-79f63b9b51b7",
+  "webhook": false
+}

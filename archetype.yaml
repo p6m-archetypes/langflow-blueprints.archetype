@@ -1,9 +1,13 @@
 ---
 description: "Langflow Blueprints"
-authors: ["Jimmie Fulton <jimmie.fulton@gmail.com>"]
-languages: []
-frameworks: []
-tags: []
+authors: ["Ybor Technology"]
+languages: ["Python"]
+frameworks: ["Langflow"]
+tags: ["AI", "ML"]
 
 requires:
   archetect: "2.0.7"
+
+components:
+  org-prompts: https://github.com/p6m-archetypes/org-prompts.archetype.git#v1
+  gitignore: https://github.com/archetect-common/dot-gitignore.archetype.git#v1
