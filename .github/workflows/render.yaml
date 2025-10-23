@@ -25,6 +25,10 @@ jobs:
           args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
           destination: ".contents"
 
+      - name: List rendered files
+        run: |
+          ls -laR
+
       - name: Upload rendered archetype
         uses: actions/upload-artifact@v4
         with:
