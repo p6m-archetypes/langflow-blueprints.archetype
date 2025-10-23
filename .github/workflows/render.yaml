@@ -18,8 +18,31 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: archetect/render-action@fix/tar-gz-path
+      - name: Render archetype
+        uses: archetect/render-action@fix/tar-gz-path
         with:
           source: "."
           args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
           destination: ".contents"
+
+      - name: Upload rendered archetype
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-archetype
+          path: .contents
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    needs: render
+    steps:
+      - name: Download rendered archetype
+        uses: actions/download-artifact@v4
+        with:
+          name: rendered-archetype
+          path: .
+      
+      - name: Run Verifications
+        run: |
+          uv sync
+          
