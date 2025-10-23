@@ -18,9 +18,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: archetect/render-action@v1
+      - uses: archetect/render-action@fix/tar-gz-path
         with:
-          version: v2.0.7
           source: "."
           args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
           destination: ".contents"
