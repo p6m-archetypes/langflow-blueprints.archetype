@@ -1,12 +1,8 @@
 import hashlib
 import uuid
-from typing import Dict, List, Optional
 
 from langchain.embeddings.base import Embeddings
 from langchain_qdrant import Qdrant
-from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, PointStruct, VectorParams
-
 from langflow.base.vectorstores.model import LCVectorStoreComponent, check_cached_vector_store
 from langflow.helpers.data import docs_to_data
 from langflow.io import (
@@ -18,6 +14,8 @@ from langflow.io import (
     StrInput,
 )
 from langflow.schema import Data
+from qdrant_client import QdrantClient
+from qdrant_client.models import Distance, PointStruct, VectorParams
 
 
 class YborQdrantComponent(LCVectorStoreComponent):
@@ -284,8 +282,8 @@ class YborQdrantComponent(LCVectorStoreComponent):
             self.log("🗑️ Deleting entire collection for complete overwrite")
             try:
                 client.delete_collection(collection_name)
-            except:
-                pass  # Collection might not exist
+            except Exception as e:
+                self.log(f"Error deleting collection: {e}")
 
             self._create_collection_if_not_exists(client, collection_name, vector_size)
         else:
@@ -435,8 +433,8 @@ class YborQdrantComponent(LCVectorStoreComponent):
         try:
             collection_info = client.get_collection(self.collection_name)
             self.log(f"📊 Final collection stats: {collection_info.points_count} total points")
-        except:
-            pass
+        except Exception as e:
+            self.log(f"Error retrieving collection stats: {e}")
 
         return qdrant
 

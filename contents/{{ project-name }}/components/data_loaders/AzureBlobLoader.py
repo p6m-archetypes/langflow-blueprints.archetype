@@ -1,5 +1,5 @@
 import hashlib
-from typing import List
+from typing import Any
 
 from langchain_core.documents import Document
 from langflow.custom import Component
@@ -20,7 +20,6 @@ class AzureBlobLoader(Component):
             display_name="File format to filter the files ",
             info="Suffix to filter the files example .md or .pdf etc",
             value=".",
-            tool_mode=True,
         ),
         MessageTextInput(
             name="container_name",
@@ -44,7 +43,7 @@ class AzureBlobLoader(Component):
         # Output(display_name="DataFrame", name="dataframe", method="as_dataframe")
     ]
 
-    def build(self) -> List[Data]:
+    def build(self, **kwargs: Any) -> list[Data]:
         # Connect to Azure Blob Storage
         container = self.container_name
         Suffix = self.filter_suffix
