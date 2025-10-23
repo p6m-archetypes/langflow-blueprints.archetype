@@ -88,25 +88,25 @@ class YborQdrantComponent(LCVectorStoreComponent):
         """Generate a deterministic ID based on the chosen strategy."""
         if strategy == "content_hash":
             # Use MD5 hash of content for ID
-            content = document.page_content.encode('utf-8')
+            content = document.page_content.encode("utf-8")
             return hashlib.md5(content).hexdigest()
-        
+
         elif strategy == "source_path":
             # Use source path from metadata
             source = document.metadata.get("source", "")
             if source:
-                return hashlib.md5(source.encode('utf-8')).hexdigest()
+                return hashlib.md5(source.encode("utf-8")).hexdigest()
             return str(uuid.uuid4())
-        
+
         elif strategy == "etag":
             # Use Azure Blob etag if available, convert to safe integer
             etag = document.metadata.get("etag", "")
             if etag:
                 # Clean etag: remove quotes, handle hex prefixes
-                cleaned_etag = etag.replace('"', '').replace('0x', '').replace('0X', '')
-                
+                cleaned_etag = etag.replace('"', "").replace("0x", "").replace("0X", "")
+
                 # Convert hex etag to integer, but ensure it stays within 64-bit bounds
-                if len(cleaned_etag) > 0 and all(c in '0123456789abcdefABCDEF' for c in cleaned_etag):
+                if len(cleaned_etag) > 0 and all(c in "0123456789abcdefABCDEF" for c in cleaned_etag):
                     try:
                         # Convert hex to integer, but keep it within safe range
                         hex_value = int(cleaned_etag, 16)
@@ -122,10 +122,10 @@ class YborQdrantComponent(LCVectorStoreComponent):
                 else:
                     # If etag is not hex, hash it to get an integer
                     return abs(hash(etag)) % (2**63 - 1)
-            
+
             # Fallback to UUID converted to integer if no etag
             return abs(hash(str(uuid.uuid4()))) % (2**63 - 1)
-        
+
         elif strategy == "checksum":
             # Use Azure Blob checksum if available, convert to safe integer
             checksum = document.metadata.get("checksum", "")
@@ -134,11 +134,11 @@ class YborQdrantComponent(LCVectorStoreComponent):
                 # This ensures consistent, bounded integers regardless of checksum format
                 return abs(hash(checksum)) % (2**63 - 1)
             return abs(hash(str(uuid.uuid4()))) % (2**63 - 1)
-        
+
         elif strategy == "auto_uuid":
             # Always generate new UUID as integer (useful for append mode)
             return abs(hash(str(uuid.uuid4()))) % (2**63 - 1)
-        
+
         else:
             return abs(hash(str(uuid.uuid4()))) % (2**63 - 1)
 
@@ -149,13 +149,13 @@ class YborQdrantComponent(LCVectorStoreComponent):
             self.log(f"Collection '{collection_name}' already exists")
         except Exception:
             self.log(f"Creating collection '{collection_name}' with vector size {vector_size}")
-            
+
             distance_mapping = {
                 "Cosine": Distance.COSINE,
                 "Euclidean": Distance.EUCLID,
                 "Dot Product": Distance.DOT,
             }
-            
+
             client.create_collection(
                 collection_name=collection_name,
                 vectors_config=VectorParams(
@@ -170,7 +170,7 @@ class YborQdrantComponent(LCVectorStoreComponent):
             # Scroll through all points to get their IDs
             existing_ids = set()
             offset = None
-            
+
             while True:
                 points, next_offset = client.scroll(
                     collection_name=collection_name,
@@ -179,14 +179,14 @@ class YborQdrantComponent(LCVectorStoreComponent):
                     with_payload=False,
                     with_vectors=False,
                 )
-                
+
                 for point in points:
                     existing_ids.add(str(point.id))
-                
+
                 if next_offset is None:
                     break
                 offset = next_offset
-            
+
             return existing_ids
         except Exception as e:
             self.log(f"Error getting existing point IDs: {e}")
@@ -195,56 +195,56 @@ class YborQdrantComponent(LCVectorStoreComponent):
     def _perform_upsert_operation(self, client: QdrantClient, collection_name: str, documents: list):
         """Perform upsert operation - update existing points or add new ones."""
         self.log(f"🔄 UPSERT MODE: Processing {len(documents)} documents with ID strategy: {self.id_strategy}")
-        
+
         # Get embedding dimensions from first document
         first_embedding = self.embedding.embed_query(documents[0].page_content)
         vector_size = len(first_embedding)
-        
+
         # Ensure collection exists
         self._create_collection_if_not_exists(client, collection_name, vector_size)
-        
+
         # Prepare points for upsert
         points = []
         for i, doc in enumerate(documents):
             try:
                 # Generate deterministic ID
                 point_id = self._generate_point_id(doc, self.id_strategy)
-                
+
                 # Validate point ID
                 if not point_id or len(str(point_id)) == 0:
                     self.log(f"⚠️ Generated empty ID for doc {i}, using fallback UUID")
-                    point_id = str(uuid.uuid4()).replace('-', '')
-                
+                    point_id = str(uuid.uuid4()).replace("-", "")
+
                 # Get embedding for document
                 vector = self.embedding.embed_query(doc.page_content)
-                
+
                 # Create point with metadata
                 payload = {
                     self.content_payload_key: doc.page_content,
                     self.metadata_payload_key: doc.metadata,
                 }
-                
+
                 point = PointStruct(
                     id=point_id,
                     vector=vector,
                     payload=payload,
                 )
                 points.append(point)
-                
+
                 # Log with more details for debugging
-                source = doc.metadata.get('source', 'unknown')
-                etag = doc.metadata.get('etag', 'no-etag')
-                checksum = doc.metadata.get('checksum', 'no-checksum')
+                source = doc.metadata.get("source", "unknown")
+                etag = doc.metadata.get("etag", "no-etag")
+                checksum = doc.metadata.get("checksum", "no-checksum")
                 self.log(f"📝 Prepared point ID: {point_id} (type: {type(point_id).__name__}) from source: {source}")
                 if self.id_strategy == "etag":
                     self.log(f"   📋 ETag: {etag}")
                 elif self.id_strategy == "checksum":
                     self.log(f"   📋 Checksum: {checksum}")
-                
+
             except Exception as e:
                 self.log(f"❌ Error preparing point {i}: {e}")
                 # Create fallback point with UUID
-                fallback_id = str(uuid.uuid4()).replace('-', '')
+                fallback_id = str(uuid.uuid4()).replace("-", "")
                 try:
                     vector = self.embedding.embed_query(doc.page_content)
                     payload = {
@@ -261,24 +261,24 @@ class YborQdrantComponent(LCVectorStoreComponent):
                 except Exception as e2:
                     self.log(f"❌ Failed to create fallback point {i}: {e2}")
                     continue
-        
+
         # Perform upsert operation
         operation_info = client.upsert(
             collection_name=collection_name,
             points=points,
             wait=True,
         )
-        
+
         self.log(f"✅ Upsert completed. Operation info: {operation_info}")
 
     def _perform_overwrite_operation(self, client: QdrantClient, collection_name: str, documents: list):
         """Perform overwrite operation - replace specified documents or entire collection."""
         self.log(f"🔄 OVERWRITE MODE: Processing {len(documents)} documents")
-        
+
         # Get embedding dimensions from first document
         first_embedding = self.embedding.embed_query(documents[0].page_content)
         vector_size = len(first_embedding)
-        
+
         if not self.preserve_existing:
             # Delete and recreate entire collection
             self.log("🗑️ Deleting entire collection for complete overwrite")
@@ -286,81 +286,85 @@ class YborQdrantComponent(LCVectorStoreComponent):
                 client.delete_collection(collection_name)
             except:
                 pass  # Collection might not exist
-            
+
             self._create_collection_if_not_exists(client, collection_name, vector_size)
         else:
             # Preserve existing points, just overwrite specific ones
             self.log("🔄 Selective overwrite - preserving existing points not in current batch")
             self._create_collection_if_not_exists(client, collection_name, vector_size)
-        
+
         # Prepare points with deterministic IDs (so we can overwrite specific documents)
         points = []
         for doc in documents:
             point_id = self._generate_point_id(doc, self.id_strategy)
             vector = self.embedding.embed_query(doc.page_content)
-            
+
             payload = {
                 self.content_payload_key: doc.page_content,
                 self.metadata_payload_key: doc.metadata,
             }
-            
+
             point = PointStruct(
                 id=point_id,
                 vector=vector,
                 payload=payload,
             )
             points.append(point)
-            
-            self.log(f"📝 Prepared overwrite point ID: {point_id[:8]}... from source: {doc.metadata.get('source', 'unknown')}")
-        
+
+            self.log(
+                f"📝 Prepared overwrite point ID: {point_id[:8]}... from source: {doc.metadata.get('source', 'unknown')}"
+            )
+
         # Perform upsert (which will overwrite existing points with same IDs)
         operation_info = client.upsert(
             collection_name=collection_name,
             points=points,
             wait=True,
         )
-        
+
         self.log(f"✅ Overwrite completed. Operation info: {operation_info}")
 
     def _perform_append_operation(self, client: QdrantClient, collection_name: str, documents: list):
         """Perform append operation - always add as new points with unique IDs."""
         self.log(f"🔄 APPEND MODE: Adding {len(documents)} documents as new points")
-        
+
         # Get embedding dimensions from first document
         first_embedding = self.embedding.embed_query(documents[0].page_content)
         vector_size = len(first_embedding)
-        
+
         # Ensure collection exists
         self._create_collection_if_not_exists(client, collection_name, vector_size)
-        
+
         # Prepare points with unique UUIDs (always new points)
         points = []
         for doc in documents:
             # Always generate new UUID for append mode
             point_id = str(uuid.uuid4())
             vector = self.embedding.embed_query(doc.page_content)
-            
+
             payload = {
                 self.content_payload_key: doc.page_content,
                 self.metadata_payload_key: doc.metadata,
             }
-            
+
             point = PointStruct(
                 id=point_id,
                 vector=vector,
                 payload=payload,
             )
             points.append(point)
-            
-            self.log(f"📝 Prepared new point ID: {point_id[:8]}... from source: {doc.metadata.get('source', 'unknown')}")
-        
+
+            self.log(
+                f"📝 Prepared new point ID: {point_id[:8]}... from source: {doc.metadata.get('source', 'unknown')}"
+            )
+
         # Perform upsert with unique IDs (effectively append)
         operation_info = client.upsert(
             collection_name=collection_name,
             points=points,
             wait=True,
         )
-        
+
         self.log(f"✅ Append completed. Operation info: {operation_info}")
 
     @check_cached_vector_store
@@ -384,7 +388,7 @@ class YborQdrantComponent(LCVectorStoreComponent):
 
         # Remove None values
         server_kwargs = {k: v for k, v in server_kwargs.items() if v is not None}
-        
+
         # Add gRPC preference if specified (helps with TLS/SSL and API key warnings)
         if self.prefer_grpc:
             server_kwargs["prefer_grpc"] = True
@@ -408,7 +412,7 @@ class YborQdrantComponent(LCVectorStoreComponent):
 
         if documents:
             self.log(f"🚀 Starting {self.operation_mode.upper()} operation with {len(documents)} documents")
-            
+
             # Route to appropriate operation based on mode
             if self.operation_mode == "upsert":
                 self._perform_upsert_operation(client, self.collection_name, documents)
@@ -418,22 +422,14 @@ class YborQdrantComponent(LCVectorStoreComponent):
                 self._perform_append_operation(client, self.collection_name, documents)
             else:
                 raise ValueError(f"Unknown operation mode: {self.operation_mode}")
-            
+
             # Create Qdrant vector store from existing collection
-            qdrant = Qdrant(
-                client=client,
-                embeddings=self.embedding,
-                **qdrant_kwargs
-            )
-            
+            qdrant = Qdrant(client=client, embeddings=self.embedding, **qdrant_kwargs)
+
         else:
             # No documents, create empty vector store
             self.log("No documents to process, creating empty vector store")
-            qdrant = Qdrant(
-                embeddings=self.embedding, 
-                client=client, 
-                **qdrant_kwargs
-            )
+            qdrant = Qdrant(embeddings=self.embedding, client=client, **qdrant_kwargs)
 
         # Get final collection stats
         try:

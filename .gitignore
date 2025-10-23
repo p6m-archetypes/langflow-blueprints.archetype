@@ -9,3 +9,5 @@
 .classpath
 .settings/
 
+### Rendered Contents ###
+.contents/

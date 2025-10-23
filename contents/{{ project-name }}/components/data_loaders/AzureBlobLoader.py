@@ -22,7 +22,6 @@ class AzureBlobLoader(Component):
             value=".",
             tool_mode=True,
         ),
-
         MessageTextInput(
             name="container_name",
             display_name="Azure Blob Container name ",
@@ -53,11 +52,14 @@ class AzureBlobLoader(Component):
         if not conn_str:
             raise RuntimeError("Azure connection string not passed. Please pass it in Input")
         from azure.storage.blob import BlobServiceClient
+
         service_client = BlobServiceClient.from_connection_string(conn_str)
         container_client = service_client.get_container_client(container)
 
         documents = []
-        self.log(f"Following blobs will be processed {container_client.list_blobs()}", )
+        self.log(
+            f"Following blobs will be processed {container_client.list_blobs()}",
+        )
         # List blobs (filter by prefix if provided) and download .md files
         for blob in container_client.list_blobs():
             if not blob.name.lower().endswith(Suffix):
@@ -70,7 +72,7 @@ class AzureBlobLoader(Component):
             checksum = hashlib.md5(content_bytes).hexdigest()  # MD5 checksum for content
             etag = blob.etag.strip('"') if blob.etag else None  # strip quotes from ETag
 
-            self.log(f"Fetched content from {blob.name}" )
+            self.log(f"Fetched content from {blob.name}")
             self.log(f"decoded content is {text}")
 
             # Create Document with content and metadata (source path, etag, checksum)
