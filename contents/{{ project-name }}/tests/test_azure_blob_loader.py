@@ -16,7 +16,9 @@ class TestAzureBlobLoader:
         comp = AzureBlobLoader()
         comp.container_name = "test-container"
         comp.filter_suffix = ".md"
-        comp.connection_string = "DefaultEndpointsProtocol=https;AccountName=test;AccountKey=test==;EndpointSuffix=core.windows.net"
+        comp.connection_string = (
+            "DefaultEndpointsProtocol=https;AccountName=test;AccountKey=test==;EndpointSuffix=core.windows.net"
+        )
         comp.log = MagicMock()
         return comp
 

@@ -1,7 +1,6 @@
 """Tests for YborQdrant component."""
 
 import hashlib
-import uuid
 from unittest.mock import MagicMock, Mock, patch
 
 import pytest
@@ -46,7 +45,7 @@ class TestYborQdrantComponent:
 
         point_id = component._generate_point_id(doc, "content_hash")
 
-        expected_hash = hashlib.md5("test content".encode("utf-8")).hexdigest()
+        expected_hash = hashlib.md5(b"test content").hexdigest()
         assert point_id == expected_hash
 
     def test_generate_point_id_source_path(self, component):
@@ -56,7 +55,7 @@ class TestYborQdrantComponent:
 
         point_id = component._generate_point_id(doc, "source_path")
 
-        expected_hash = hashlib.md5("/path/to/file.txt".encode("utf-8")).hexdigest()
+        expected_hash = hashlib.md5(b"/path/to/file.txt").hexdigest()
         assert point_id == expected_hash
 
     def test_generate_point_id_etag(self, component):
