@@ -21,4 +21,5 @@ jobs:
       - uses: archetect/render-action@v1
         with:
           source: "."
-          args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints --destination=.contents"
+          args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
+          destination: ".contents"
