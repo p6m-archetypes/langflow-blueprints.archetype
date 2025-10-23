@@ -38,6 +38,12 @@ jobs:
       matrix:
         python-version: [3.12]
         project: ["langflow-blueprints"]
+        test-command:
+          - uv run ruff format --check .
+          - uv run ruff check .
+          - uv run mypy components/
+          - uv run pytest --cov=components --cov-report=xml
+          - uv build
     steps:
       - name: Download rendered archetype
         uses: actions/download-artifact@v4
@@ -49,7 +55,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Run Verifications
+      - name: Verify "${{ matrix.test-command }}" in ${{ matrix.project }}
         run: |
           cd ${{ matrix.project }}
           uv sync
+          ${{ matrix.test-command }}
