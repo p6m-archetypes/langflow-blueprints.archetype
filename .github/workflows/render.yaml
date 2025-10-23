@@ -25,6 +25,14 @@ jobs:
           args: "-a org-name=p6m -a solution-name=archetypes -a project-name=langflow-blueprints"
           destination: /tmp/contents
 
+      - name: Initialize Git
+        run: |
+          cd /tmp/contents
+          git init
+          git add .
+          git diff
+          git commit -m "Initial Commit"
+
       - name: Upload rendered archetype
         uses: actions/upload-artifact@v4
         with:
