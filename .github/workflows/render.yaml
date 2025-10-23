@@ -37,17 +37,13 @@ jobs:
     strategy:
       matrix:
         python-version: [3.12]
-        projects: ["langflow-blueprints"]
+        project: ["langflow-blueprints"]
     steps:
       - name: Download rendered archetype
         uses: actions/download-artifact@v4
         with:
           name: contents
           path: .
-
-      - name: List downloaded files
-        run: |
-          ls -laR
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -56,4 +52,5 @@ jobs:
 
       - name: Run Verifications
         run: |
+          cd ${{ matrix.project }}
           uv sync
