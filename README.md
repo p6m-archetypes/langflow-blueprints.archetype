@@ -1,5 +1,7 @@
 # Langflow Blueprints Archetype
 
+![Latest Release](https://img.shields.io/github/v/release/p6m-archetypes/langflow-blueprints.archetype?style=flat-square&label=Latest%20Release&color=blue)
+
 This is an [Archetect](https://archetect.github.io/) archetype.
 
 ## Rendering
